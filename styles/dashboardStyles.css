@@ -34,4 +34,10 @@ a{
   .nav-link{
     padding: 20px;
   }
+  .active{
+    border-left: none;
+  }
+  .nav-link:hover{
+    border-left:none;
+  }
 }
