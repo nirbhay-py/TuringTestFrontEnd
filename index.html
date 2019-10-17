@@ -13,18 +13,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1 class='head'>Turing Test </h1>
+    <h1 class='head' id="main">Turing Test </h1>
     <div class="loginBox">
       <h4 id="usernamePrompt">C:\TuringF\TuringTest>$username</h4>
-      <input type="text" id="username" name="username">
+      <input type="text" id="username" name="username" autocomplete="off">
       <br>
       <h4 id="pswdPrompt">C:\TuringF\TuringTest>$pswd</h4>
-      <input type="password" id="pswd" name="username">
+      <input type="password" id="pswd" name="username" autocomplete="off">
       <br>
       <button id="login">su --login</button>
     </div>
 
     <script src ="js/main.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -7,4 +7,12 @@ $(document).ready(function(){
         $("#username").focus();
     }
   });
+  var elem = document.getElementById('main');
+
+  var typewriter = new Typewriter(elem, {
+      loop: false
+  });
+
+  typewriter.typeString('<strong>Turing Test</strong>')
+      .start();
 })
