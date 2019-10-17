@@ -1,3 +1,4 @@
+
 *{
   font-family: 'VT323', monospace!important;
   color:#00ff41!important;
@@ -17,11 +18,10 @@ body{
   right: 0;
   bottom: 0;
   margin: auto;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 .loginBox{
-  white-space: nowrap;
   text-align: left;
 }
 #usernamePrompt{
@@ -35,41 +35,29 @@ body{
 
 #username{
   background-color: transparent;
-  display: inline-block;
-  border: none;
   outline: none;
-  border-left: 2px solid #00ff41;
-  animation-name: cursorBlink;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  width: 100%;
+  float:right;
+  font-size: 22px;
+  border:2px dashed #00ff41;
 }
 #pswd{
   background-color: transparent;
-  display: inline-block;
   outline: none;
-  border: none;
-  border-left: 2px solid #00ff41;
-  animation-name: cursorBlink;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-@-webkit-keyframes cursorBlink {
-  from {border-left:2px solid #00ff41;}
-  to {border-left:none;}
+  width: 100%;
+  border:2px dashed #00ff41;
+  font-size: 22px;
 }
 
-/* Standard syntax */
-@keyframes cursorBlink {
-  from {border-left:2px solid #00ff41;}
-  to {border-left:none;}
+#login{
+  font-size: 22px;
+  background: transparent;
+  border:dashed;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
 }
-#username:focus{
-  border: none!important;
-  animation: none!important;
-}
-#pswd:focus{
-  border: none!important;
-  animation: none!important;
+#login:focus{
+  outline: none;
 }
