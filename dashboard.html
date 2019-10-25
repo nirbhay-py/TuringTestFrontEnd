@@ -11,7 +11,43 @@
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
+  <style>
+  body{
+    text-align: center;
+  }
+  .question{
+
+  }
+  #answer{
+    background:transparent;
+    border:2px dashed #00ff41;
+    font-size: 17px;
+    width: 40%;
+  }
+  #answer:focus{
+    outline:none;
+  }
+  .box{
+    padding: 20px;
+    border:2px dashed #00ff41;
+    position: absolute;
+    transform: translateY(-50%);
+    top:50%;
+    transform: translateX(-50%);
+    left:50%;
+  }
+  #go{
+    margin-top: 15px;
+    width: 40%;
+    background: transparent;
+    border:2px dashed #00ff41;
+  }
+  #go:focus{
+    outline:none;l
+  }
+  </style>
   <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <a class="navbar-brand" href="#">Turing Test</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +68,14 @@
         </ul>
       </div>
     </nav>
+    <div class="box">
+      <h2 class='question'>$TuringF/TuringTest/Level1></h2>
+      <h2 class='question'> Sample Question </h2>
+      <input type="text" id="answer" name="username" autocomplete="off"><br>
+      <button id="go">run answer.py</button>
+    </div>
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
