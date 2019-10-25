@@ -39,20 +39,18 @@ body{
   width: 100%;
   float:right;
   font-size: 22px;
-  border:2px dashed #00ff41;
 }
 #pswd{
   background-color: transparent;
   outline: none;
   width: 100%;
-  border:2px dashed #00ff41;
   font-size: 22px;
 }
 
 #login{
   font-size: 22px;
   background: transparent;
-  border:dashed;
+  border: 3px dashed;
   padding: 10px;
   width: 100%;
   text-align: center;
