@@ -14,6 +14,8 @@
   <style>
   body{
     text-align:center;
+
+		/* background-size:cover; */
   }
 	.wrapper{
 		text-align: center;
@@ -22,7 +24,7 @@
 		position: fixed;
 		left: 0;
 		top:0;
-		z-index: 10;
+		background:url("back.gif")
 	}
   #answer{
     background:transparent;
@@ -35,22 +37,29 @@
   }
   .box{
     padding: 20px;
-    border:2px dashed #00ff41;
+    border:2px solid #00ff41;
 		width: 500px;
 		position: absolute;
  		left: 50%;
  		top: 50%;
+		background: black;
  		transform: translate(-50%, -50%);
 }
   #go{
     margin-top: 15px;
     width: 40%;
     background: transparent;
-    border:2px dashed #00ff41;
+    border:2px solid #00ff41;
   }
   #go:focus{
     outline:none;
   }
+	nav{
+		background: black!important;
+		z-index: 11!important;
+		border:2px solid #00ff41;
+
+	}
   </style>
   <body>
 
@@ -63,7 +72,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Leaderboard</a>
+            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Slack</a>
