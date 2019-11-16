@@ -13,16 +13,62 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
+		<style media="screen">
+			body{
+				text-align:centre;
+			}
+			#board{
+				width:50%;
+				height:50%;
+				margin: 0 auto;
+				margin-top:70px;
+			}
+			th{
+				padding:15px;
+				font-size:22px;
+			}
+			table, th, td {
+  			border: 1px dashed #00ff41;
+  			border-collapse: collapse;
+			}
+			td{
+				padding:15px;
+				font-size:20px;
+			}
+		</style>
     <h1 class='head' id="main">Turing Test </h1>
-    <div class="loginBox">
-      <h4 id="usernamePrompt">TuringTest@TurinF $usrn</h4>
-      <input type="text" id="username" name="username" autocomplete="off" placeholder=">">
-      <br>
-      <h4 id="pswdPrompt">TuringTest@TurinF $pswd</h4>
-      <input type="password" id="pswd" name="username" autocomplete="off" placeholder=">">
-      <br>
-      <button id="login">su --login</button>
-    </div>
+		<h2 class='head' id="main">Leaderboard </h2>
+		<table id="board">
+			<tr>
+				<th>Name</th>
+				<th>Position</th>
+			</tr>
+			<tr>
+    		<td>g0d</td>
+    		<td>1</td>
+  		</tr>
+  		<tr>
+  			<td>JPIS</td>
+    		<td>2</td>
+  		</tr>
+			<tr>
+  			<td>JPIS</td>
+    		<td>2</td>
+  		</tr>
+			<tr>
+  			<td>JPIS</td>
+    		<td>2</td>
+  		</tr>
+			<tr>
+  			<td>JPIS</td>
+    		<td>2</td>
+  		</tr>
+			<tr>
+  			<td>JPIS</td>
+    		<td>2</td>
+  		</tr>
+
+		</table>
 
     <script src ="js/main.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
